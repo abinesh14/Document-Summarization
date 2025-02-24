@@ -17,29 +17,29 @@ st.set_page_config(page_title="AI Document Analyzer", layout="wide")
 # Sidebar - Improved UI
 with st.sidebar:
     st.markdown(
-        """
-        <style>
-            .sidebar-title {
-                font-size: 22px;
-                font-weight: bold;
-                color: #ffcc00;
-                margin-bottom: 10px;
-            }
-            .sidebar-section {
-                background-color: #1e1e2f;
-                padding: 15px;
-                border-radius: 10px;
-                margin-bottom: 15px;
-            }
-            .sidebar-text {
-                font-size: 16px;
-                color: #cccccc;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
+    """
+    <style>
+        .sidebar-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff0033;
+            margin-bottom: 10px;
+        }
+        .sidebar-section {
+            background-color: #1e1e2f;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .sidebar-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+    
     st.markdown("<div class='sidebar-title'>⚙️ Configuration</div>", unsafe_allow_html=True)
     with st.expander("Model & API Status", expanded=True):
         if api_key:
@@ -75,9 +75,9 @@ with st.sidebar:
 
 # Main Content
 st.markdown(
-    "<h1 style='text-align: center; color: white;'>Summarization & Keyword Extraction</h1>",
-    unsafe_allow_html=True
-)
+    "<h1 style='text-align: center;'>Summarization & Keyword Extraction</h1>", 
+    unsafe_allow_html=True)
+
 
 st.markdown(
     "<p style='text-align: center; font-size: 18px;'>Upload a document or paste text to generate a summary, detect the domain, and extract keywords.</p>",
