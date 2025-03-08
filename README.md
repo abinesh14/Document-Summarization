@@ -1,4 +1,4 @@
-# AI Document Analyzer
+# AI Document Summarization
 
 AI-powered document analyzer using Streamlit and Google's Gemini API for text summarization, domain detection, and keyword extraction.
 
